@@ -21,3 +21,4 @@ source $ZSH/oh-my-zsh.sh
 alias gdw="git diff -w"
 alias rmr="sudo rm -r"
 alias scssw="scss --watch"
+alias gc="git commit -m"
