@@ -14,7 +14,7 @@ DEFAULT_USER="owen"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(sudo wd debian git composer web-search geeknote vagrant npm)
+plugins=(sudo common-aliases debian git composer httpie web-search geeknote vagrant npm bower)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,3 +22,4 @@ alias gdw="git diff -w"
 alias rmr="sudo rm -r"
 alias scssw="scss --watch"
 alias gc="git commit -m"
+alias gpt="gp && gp --tags"
