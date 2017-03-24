@@ -21,6 +21,9 @@ sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt
 # CURL, HTTPie
 apt install -y curl httpie
 
+# Apache, PHP, MariaDB
+apt install -y apache2 php mariadb-server libapache2-mod-php php-mysql
+
 # cairo-dock, php, apache, mariadb, zsh, oh-my-zsh, docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme
 
 
