@@ -18,6 +18,8 @@ plugins=(sudo common-aliases debian git composer httpie web-search geeknote vagr
 
 source $ZSH/oh-my-zsh.sh
 
+alias ad="sudo apt update"
+alias ag="sudo apt upgrade"
 alias gdw="git diff -w"
 alias rmr="sudo rm -r"
 alias scssw="scss --watch"
