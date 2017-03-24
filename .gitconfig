@@ -1,0 +1,20 @@
+[user]
+	name = Alexis Wurth
+	email = alexis.wurth57@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[push]
+	default = simple
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[core]
+	excludesfile = /home/owen/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[pull]
+	rebase = preserve
