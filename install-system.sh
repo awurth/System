@@ -24,6 +24,10 @@ apt install -y curl httpie
 # Apache, PHP, MariaDB
 apt install -y apache2 php mariadb-server libapache2-mod-php php-mysql phpmyadmin
 
+# Node.js
+curl -sL https://deb.nodesource.com/setup_7.x | bash -
+apt install -y nodejs
+
 # Zsh
 apt install zsh
 # Oh-my-Zsh
