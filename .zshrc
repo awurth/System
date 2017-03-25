@@ -20,8 +20,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias ad="sudo apt update"
 alias ag="sudo apt upgrade"
+alias ai="sudo apt install"
 alias gdw="git diff -w"
 alias rmr="sudo rm -r"
-alias scssw="scss --watch"
 alias gc="git commit -m"
 alias gpt="gp && gp --tags"
