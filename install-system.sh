@@ -37,9 +37,10 @@ chsh -s $(which zsh)
 # Download PowerLevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-# cairo-dock, docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, diff-so-fancy, virtualhost, atom
+# cairo-dock, docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, virtualhost, atom
 
-# Node: vuejs, bower, gulp, electron
+# Diff-so-fancy
+npm install -g diff-so-fancy bower gulp-cli vue-cli
 
 # ToDo
 # Set shell powerline font
