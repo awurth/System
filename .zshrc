@@ -1,5 +1,5 @@
 
-  export ZSH=/home/owen/.oh-my-zsh
+export ZSH=/home/owen/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
