@@ -3,12 +3,17 @@
 apt update && apt upgrade -y
 
 # Unity Tweak Tool, Gimp
-apt install -y unity-tweak-tool gimp
+apt install -y unity-tweak-tool cairo-dock gimp
 
 # Numix Icon Theme Circle
 add-apt-repository -y ppa:numix/ppa &&
     apt update &&
     apt install -y numix-icon-theme-circle
+
+# Arc-Theme
+add-apt-repository ppa:noobslab/themes &&
+    apt-get update &&
+    apt-get install arc-theme
 
 # Git
 apt install -y git
@@ -37,7 +42,7 @@ chsh -s $(which zsh)
 # Download PowerLevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-# cairo-dock, docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, virtualhost, atom
+# docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, virtualhost, atom
 
 # Diff-so-fancy
 npm install -g diff-so-fancy bower gulp-cli vue-cli
