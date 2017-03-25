@@ -11,9 +11,9 @@ add-apt-repository -y ppa:numix/ppa &&
     apt install -y numix-icon-theme-circle
 
 # Arc-Theme
-add-apt-repository ppa:noobslab/themes &&
+add-apt-repository -y ppa:noobslab/themes &&
     apt-get update &&
-    apt-get install arc-theme
+    apt-get install -y arc-theme
 
 # Git
 apt install -y git
