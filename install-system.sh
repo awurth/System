@@ -30,7 +30,12 @@ apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Set Zsh as default shell
 chsh -s $(which zsh)
+# Download PowerLevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # cairo-dock, docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, diff-so-fancy, virtualhost, atom
 
 # Node: vuejs, bower, gulp, electron
+
+# ToDo
+# Set shell powerline font
