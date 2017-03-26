@@ -49,3 +49,4 @@ npm install -g diff-so-fancy bower gulp-cli vue-cli
 
 # ToDo
 # Set shell powerline font
+# Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
