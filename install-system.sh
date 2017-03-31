@@ -63,7 +63,10 @@ add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu
 apt update
 apt install -y docker-ce
 
-# docker, gitkrakren, sass, virtualhost, atom
+groupadd docker
+usermod -aG docker $USER
+
+# gitkrakren, sass, virtualhost, atom
 
 # TODO
 # - Install powerline font
