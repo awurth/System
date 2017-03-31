@@ -12,8 +12,8 @@ add-apt-repository -y ppa:numix/ppa &&
 
 # Arc-Theme
 add-apt-repository -y ppa:noobslab/themes &&
-    apt-get update &&
-    apt-get install -y arc-theme
+    apt update &&
+    apt install -y arc-theme
 
 # Git
 apt install -y git
@@ -26,12 +26,17 @@ sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt
 # CURL, HTTPie
 apt install -y curl httpie
 
-# Apache, PHP, MariaDB
-apt install -y apache2 php mariadb-server libapache2-mod-php php-mysql phpmyadmin
+# Apache, PHP, MySQL
+apt install -y apache2 php mysql-server libapache2-mod-php php-mysql phpmyadmin
 
 # Node.js
 curl -sL https://deb.nodesource.com/setup_7.x | bash -
 apt install -y nodejs
+
+# Composer
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
+    php composer-setup.php &&
+    php -r "unlink('composer-setup.php');"
 
 # Zsh
 apt install zsh
@@ -47,6 +52,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Diff-so-fancy
 npm install -g diff-so-fancy bower gulp-cli vue-cli
 
-# ToDo
-# Set shell powerline font
-# Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
+# TODO
+# - Install powerline font
+# - Set shell powerline font
+# - Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
