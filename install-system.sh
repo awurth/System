@@ -3,7 +3,7 @@
 apt update && apt upgrade -y
 
 # Unity Tweak Tool, Gimp
-apt install -y unity-tweak-tool cairo-dock gimp
+apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gimp
 
 # Numix Icon Theme Circle
 add-apt-repository -y ppa:numix/ppa &&
