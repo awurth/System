@@ -65,6 +65,7 @@ apt install -y docker-ce
 
 groupadd docker
 usermod -aG docker $USER
+systemctl enable docker
 
 # gitkrakren, sass, virtualhost, atom
 
