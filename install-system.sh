@@ -56,7 +56,14 @@ add-apt-repository -y ppa:nathan-renniewaldock/flux &&
     apt update &&
     apt install -y fluxgui
 
-# docker, dropbox, gitkrakren, sass, virtualhost, atom
+# Docker
+apt install -y apt-transport-https ca-certificates software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt update
+apt install -y docker-ce
+
+# docker, gitkrakren, sass, virtualhost, atom
 
 # TODO
 # - Install powerline font
