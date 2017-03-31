@@ -35,8 +35,9 @@ apt install -y nodejs
 
 # Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
-    php composer-setup.php --install-dir=/user/bin --filename=composer &&
-    php -r "unlink('composer-setup.php');"
+    php composer-setup.php --filename=composer &&
+    php -r "unlink('composer-setup.php');" &&
+    mv composer.phar /user/bin/composer
 
 # Zsh
 apt install -y zsh
