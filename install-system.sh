@@ -35,11 +35,11 @@ apt install -y nodejs
 
 # Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
-    php composer-setup.php &&
+    php composer-setup.php --install-dir=/user/bin --filename=composer &&
     php -r "unlink('composer-setup.php');"
 
 # Zsh
-apt install zsh
+apt install -y zsh
 # Oh-my-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Set Zsh as default shell
