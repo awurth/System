@@ -51,6 +51,11 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Diff-so-fancy
 npm install -g diff-so-fancy bower gulp-cli vue-cli
 
+# f.lux
+add-apt-repository ppa:nathan-renniewaldock/flux &&
+    apt update &&
+    apt install fluxgui
+
 # docker, dropbox, gitkrakren, sass, virtualhost, atom
 
 # TODO
