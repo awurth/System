@@ -37,7 +37,7 @@ apt install -y nodejs
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     php composer-setup.php --filename=composer &&
     php -r "unlink('composer-setup.php');" &&
-    mv composer /user/bin/composer
+    mv composer /usr/bin/composer
 
 # Zsh
 apt install -y zsh
@@ -48,10 +48,10 @@ chsh -s $(which zsh)
 # Download PowerLevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-# docker, dropbox, gitkrakren, composer, nodejs, sass, arc-theme, virtualhost, atom
-
 # Diff-so-fancy
 npm install -g diff-so-fancy bower gulp-cli vue-cli
+
+# docker, dropbox, gitkrakren, sass, virtualhost, atom
 
 # TODO
 # - Install powerline font
