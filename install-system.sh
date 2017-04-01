@@ -44,12 +44,22 @@ usermod -aG docker $USER
 systemctl enable docker
 
 # Unity Tweak Tool, Gimp
-apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gcolor2 gimp
+apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gcolor2 gimp filezilla
 
 # Google Chrome
 sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
 apt update
 apt install -y google-chrome-stable
+
+# Spotify
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+apt update
+apt install spotify-client
+
+# GitKraken
+curl -L https://release.gitkraken.com/linux/gitkraken-amd64.deb -o gitkraken-amd64.deb
+dpkg -i gitkraken-amd64.deb
 
 # Zsh
 apt install -y zsh
@@ -60,10 +70,19 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Set Zsh as default shell
 chsh -s $(which zsh)
 
-# gitkrakren, sass, virtualhost, atom, phpmyadmin
+echo '
+##############################
+# ---------- TODO ---------- #
+##############################
 
-# TODO
-# - Install powerline font
-# - Set shell powerline font
-# - Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
-# - Copy .zshrc, .gitconfig, .gitignore
+* Install powerline font
+* Set shell powerline font
+* Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
+* Copy .zshrc, .gitconfig, .gitignore
+* Run cairo-dock on boot
+* Install
+    * vivaldi
+    * atom, phpstorm, webstorm
+    * discord
+    * phpmyadmin
+'
