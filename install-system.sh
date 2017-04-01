@@ -44,7 +44,7 @@ usermod -aG docker $USER
 systemctl enable docker
 
 # Unity Tweak Tool, Gimp
-apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gimp
+apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gcolor2 gimp
 
 # Google Chrome
 sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
