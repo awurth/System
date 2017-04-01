@@ -2,9 +2,6 @@
 
 apt update && apt upgrade -y
 
-# Unity Tweak Tool, Gimp
-apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gimp
-
 # Numix Icon Theme Circle
 add-apt-repository -y ppa:numix/ppa &&
     apt update &&
@@ -39,15 +36,6 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     php -r "unlink('composer-setup.php');" &&
     mv composer /usr/bin/composer
 
-# Zsh
-apt install -y zsh
-# Oh-my-Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# Set Zsh as default shell
-chsh -s $(which zsh)
-# Download PowerLevel9k theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
 # Diff-so-fancy
 npm install -g diff-so-fancy bower gulp-cli vue-cli
 
@@ -66,6 +54,18 @@ apt install -y docker-ce
 groupadd docker
 usermod -aG docker $USER
 systemctl enable docker
+
+# Unity Tweak Tool, Gimp
+apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gimp
+
+# Zsh
+apt install -y zsh
+# Oh-my-Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Set Zsh as default shell
+chsh -s $(which zsh)
+# Download PowerLevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # gitkrakren, sass, virtualhost, atom
 
