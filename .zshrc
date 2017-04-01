@@ -18,6 +18,7 @@ plugins=(sudo common-aliases debian git composer httpie web-search geeknote vagr
 
 source $ZSH/oh-my-zsh.sh
 
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time battery)
 
