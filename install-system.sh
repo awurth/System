@@ -60,6 +60,12 @@ apt install spotify-client
 # GitKraken
 curl -L https://release.gitkraken.com/linux/gitkraken-amd64.deb -o gitkraken-amd64.deb
 dpkg -i gitkraken-amd64.deb
+rm gitkraken-amd64.deb
+
+# Atom
+curl -L https://atom.io/download/deb -o atom-amd64.deb
+dpkg -i atom-amd64.deb
+rm atom-amd64.deb
 
 # Zsh
 apt install -y zsh
@@ -82,7 +88,8 @@ echo '
 * Run cairo-dock on boot
 * Install
     * vivaldi
-    * atom, phpstorm, webstorm
+    * phpstorm, webstorm
     * discord
     * phpmyadmin
+    * postman
 '
