@@ -12,7 +12,11 @@ apt install -y numix-icon-theme-circle arc-theme
 apt install -y git curl httpie
 
 # Apache, PHP, MySQL
-apt install -y apache2 php mysql-server libapache2-mod-php php-mysql
+apt install -y apache2
+apt install -y php
+apt install -y mysql-server
+apt install -y libapache2-mod-php
+apt install -y php-mysql
 
 # Node.js
 curl -sL https://deb.nodesource.com/setup_7.x | bash -
@@ -45,11 +49,6 @@ systemctl enable docker
 
 # Unity Tweak Tool, Gimp
 apt install -y unity-tweak-tool cairo-dock nautilus-dropbox nautilus-image-converter gcolor2 gimp filezilla
-
-# Google Chrome
-sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-apt update
-apt install -y google-chrome-stable
 
 # Spotify
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
@@ -87,9 +86,9 @@ echo '
 * Copy .zshrc, .gitconfig, .gitignore
 * Run cairo-dock on boot
 * Install
-    * vivaldi
-    * phpstorm, webstorm
-    * discord
-    * phpmyadmin
-    * postman
+    * Vivaldi, Google Chrome
+    * PHPStorm, WebStorm
+    * Discord
+    * PHPMyAdmin
+    * Postman
 '
