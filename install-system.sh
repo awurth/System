@@ -72,8 +72,6 @@ apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Download PowerLevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-# Set Zsh as default shell
-chsh -s $(which zsh)
 
 echo '
 ##############################
@@ -84,6 +82,7 @@ echo '
 * Set shell powerline font
 * Select Arc-Theme Darker and Numix Circle icons in unity-tweak-tool
 * Copy .zshrc, .gitconfig, .gitignore
+* Set Zsh as default shell: chsh -s $(which zsh)
 * Run cairo-dock on boot
 * Install
     * Vivaldi, Google Chrome
