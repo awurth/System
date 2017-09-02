@@ -1,0 +1,58 @@
+
+export ZSH=/home/ayden/.oh-my-zsh
+export PATH=~/.npm-global/bin:$PATH
+
+POWERLEVEL9K_MODE="awesome-patched"
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+DEFAULT_USER="ayden"
+
+# CASE_SENSITIVE="true"
+# HYPHEN_INSENSITIVE="true"
+# DISABLE_AUTO_UPDATE="true"
+# export UPDATE_ZSH_DAYS=13
+# ENABLE_CORRECTION="true"
+# COMPLETION_WAITING_DOTS="true"
+
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(sudo common-aliases archlinux git composer httpie web-search 
+geeknote vagrant npm bower)
+
+source $ZSH/oh-my-zsh.sh
+
+POWERLEVEL9K_DIR_HOME_BACKGROUND="black"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="249"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="black"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="249"
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="249"
+POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
+POWERLEVEL9K_STATUS_OK_FOREGROUND="green"
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
+
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND="black"
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND="78"
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="black"
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="78"
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="black"
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="172"
+
+POWERLEVEL9K_TIME_BACKGROUND="black"
+POWERLEVEL9K_TIME_FOREGROUND="249"
+
+POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} \UE12E"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+
+alias ad="sudo apt update"
+alias ag="sudo apt upgrade"
+alias ai="sudo apt install"
+alias gdw="git diff -w"
+alias rmr="sudo rm -r"
+alias gc="git commit -m"
+alias gpt="gp && gp --tags"
+alias gt="git tag"
+alias hg="hexo generate"
