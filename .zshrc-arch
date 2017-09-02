@@ -47,9 +47,6 @@ POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} \UE12E"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 
-alias ad="sudo apt update"
-alias ag="sudo apt upgrade"
-alias ai="sudo apt install"
 alias gdw="git diff -w"
 alias rmr="sudo rm -r"
 alias gc="git commit -m"
