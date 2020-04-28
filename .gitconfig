@@ -1,6 +1,6 @@
 [user]
 	name = Alexis Wurth
-	email = alexis.wurth57@gmail.com
+	email = alexis.wurth@pilipili-web.com
 [alias]
 	co = checkout
 	br = branch
@@ -14,8 +14,17 @@
 	newNormal = green bold
 	newHighlight = green bold 22
 [core]
-	excludesfile = /home/ayden/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = nano
+	excludesfile = /home/alexis/.gitignore
 [pull]
 	rebase = preserve
+[color]
+	ui = true
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
