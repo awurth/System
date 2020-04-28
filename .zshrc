@@ -1,54 +1,37 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export ZSH=/home/owen/.oh-my-zsh
+# Path to your oh-my-zsh installation.
+export ZSH="/home/alexis/.oh-my-zsh"
 
-POWERLEVEL9K_MODE="awesome-patched"
-
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-DEFAULT_USER="owen"
-
-# CASE_SENSITIVE="true"
-# HYPHEN_INSENSITIVE="true"
-# DISABLE_AUTO_UPDATE="true"
-# export UPDATE_ZSH_DAYS=13
-# ENABLE_CORRECTION="true"
-# COMPLETION_WAITING_DOTS="true"
+ZSH_THEME="robbyrussell"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(sudo common-aliases debian git composer httpie web-search geeknote vagrant npm bower)
-
+plugins=(sudo common-aliases debian git composer web-search npm yarn symfony2 extract colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
-POWERLEVEL9K_DIR_HOME_BACKGROUND="black"
-POWERLEVEL9K_DIR_HOME_FOREGROUND="249"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="black"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="249"
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="249"
-POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
-POWERLEVEL9K_STATUS_OK_FOREGROUND="green"
-POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
-POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
+# User configuration
 
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND="black"
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND="78"
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="black"
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="78"
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="black"
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="172"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-POWERLEVEL9K_TIME_BACKGROUND="black"
-POWERLEVEL9K_TIME_FOREGROUND="249"
-
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} \UE12E"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir_writable dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
-
-alias ad="sudo apt update"
-alias ag="sudo apt upgrade"
-alias ai="sudo apt install"
 alias gdw="git diff -w"
 alias rmr="sudo rm -r"
 alias gc="git commit -m"
 alias gpt="gp && gp --tags"
+alias gt="git tag"
+alias sfs="symfony serve"
+alias yw="yarn watch"
+alias cld="composer-lock-diff"
+
+alias sfddc="sf doctrine:schema:update --dump-sql --complete"
+alias sfdfc="sf doctrine:schema:update --force --complete"
+
+alias php.info='php -i'
+alias php5.6='sudo a2dismod php7.0 && sudo a2dismod php7.1 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2enmod php5.6 && sudo update-alternatives --set php /usr/bin/php5.6 && sudo service apache2 restart'
+alias php7.0='sudo a2dismod php5.6 && sudo a2dismod php7.1 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2enmod php7.0 && sudo update-alternatives --set php /usr/bin/php7.0 && sudo service apache2 restart'
+alias php7.1='sudo a2dismod php5.6 && sudo a2dismod php7.0 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2enmod php7.1 && sudo update-alternatives --set php /usr/bin/php7.1 && sudo service apache2 restart'
+alias php7.2='sudo a2dismod php5.6 && sudo a2dismod php7.0 && sudo a2dismod php7.1 && sudo a2dismod php7.3 && sudo a2dismod php7.4 && sudo a2enmod php7.2 && sudo update-alternatives --set php /usr/bin/php7.2 && sudo service apache2 restart'
+alias php7.3='sudo a2dismod php5.6 && sudo a2dismod php7.0 && sudo a2dismod php7.1 && sudo a2dismod php7.2 && sudo a2dismod php7.4 && sudo a2enmod php7.3 && sudo update-alternatives --set php /usr/bin/php7.3 && sudo service apache2 restart'
+alias php7.4='sudo a2dismod php5.6 && sudo a2dismod php7.0 && sudo a2dismod php7.1 && sudo a2dismod php7.2 && sudo a2dismod php7.3 && sudo a2enmod php7.4 && sudo update-alternatives --set php /usr/bin/php7.4 && sudo service apache2 restart'
