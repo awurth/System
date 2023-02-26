@@ -28,3 +28,12 @@
 	whitespace = red reverse
 [pull]
 	rebase = true
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[rerere]
+	enabled = true
+[rebase]
+	abbreviateCommands = true
+	instructionFormat = [%an @ %ar] %s
+[status]
+	showUntrackedFiles = all
